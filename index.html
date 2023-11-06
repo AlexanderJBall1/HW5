@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 5</title>
+</head>
+<body>
+    <h1>My Favorite Football Teams</h1>
+    <p id="message" style="color: blue;">Go Cowboys!</p>
+
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="hideElement()">Hide Text</button>
+    <button onclick="showElement()">Show Text</button>
+    <button onclick="resetText()">Reset Text</button>
+
+    <script>
+        // JavaScript functions
+        function changeText() {
+            document.getElementById("message").innerHTML = "Go Sooners!";
+        }
+
+        function changeColor() {
+            document.getElementById("message").style.color = "crimson";
+        }
+
+        function hideElement() {
+            document.getElementById("message").style.display = "none";
+        }
+
+        function showElement() {
+            document.getElementById("message").style.display = "block";
+        }
+
+        function resetText() {
+            document.getElementById("message").innerHTML = "Go Cowboys!";
+            document.getElementById("message").style.color = "blue";
+        }
+    </script>
+</body>
+</html>
