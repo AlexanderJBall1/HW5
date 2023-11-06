@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>My Favorite Football Teams</h1>
-    <p id="message" style="color: blue;">Go Cowboys!</p>
+    <p id="team" style="color: blue;">Go Cowboys!</p>
 
     <button onclick="changeText()">Change Text</button>
     <button onclick="changeColor()">Change Color</button>
@@ -16,24 +16,24 @@
     <script>
         // JavaScript functions
         function changeText() {
-            document.getElementById("message").innerHTML = "Go Sooners!";
+            document.getElementById("team").innerHTML = "Go Sooners!";
         }
 
         function changeColor() {
-            document.getElementById("message").style.color = "crimson";
+            document.getElementById("team").style.color = "crimson";
         }
 
         function hideElement() {
-            document.getElementById("message").style.display = "none";
+            document.getElementById("team").style.display = "none";
         }
 
         function showElement() {
-            document.getElementById("message").style.display = "block";
+            document.getElementById("team").style.display = "block";
         }
 
         function resetText() {
-            document.getElementById("message").innerHTML = "Go Cowboys!";
-            document.getElementById("message").style.color = "blue";
+            document.getElementById("team").innerHTML = "Go Cowboys!";
+            document.getElementById("team").style.color = "blue";
         }
     </script>
 </body>
